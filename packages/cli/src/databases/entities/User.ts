@@ -1,6 +1,5 @@
 import {
 	AfterLoad,
-	AfterUpdate,
 	BeforeUpdate,
 	Column,
 	Entity,
@@ -117,12 +116,6 @@ export class User extends WithTimestamps implements IUser {
 	 * Whether the user is pending setup completion.
 	 */
 	isPending: boolean;
-
-	@AfterLoad()
-	@AfterUpdate()
-	computeIsPending(): void {
-		this.isPending = this.password === null;
-	}
 
 	/**
 	 * Whether the user is instance owner
