@@ -25,7 +25,7 @@ post:
   tags:
     - User
   summary: Create new user
-  description: Create new user on your instance. Only available for the instance owner & admins.
+  description: Create new user on your instance
   requestBody:
     description: User data
     required: true

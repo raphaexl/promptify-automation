@@ -346,12 +346,7 @@ export declare namespace UserRequest {
 		{ limit?: number; offset?: number; cursor?: string; includeRole?: boolean }
 	>;
 
-	export type Post = AuthenticatedRequest<
-		{},
-		{},
-		User,
-		{ limit?: number; offset?: number; cursor?: string; includeRole?: boolean }
-	>;
+	export type Post = AuthenticatedRequest<{}, {}, User, {}>;
 
 	export type PasswordResetLink = AuthenticatedRequest<{ id: string }, {}, {}, {}>;
 
